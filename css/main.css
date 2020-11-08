@@ -698,22 +698,22 @@ body {
 }
 
 .client {
-  padding: 94px 0px;
+  padding: 60px 0px;
 }
 
 .client-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #212121;
 }
 
 .client-list {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .client-item-link {
@@ -722,7 +722,7 @@ body {
   align-items: center;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   transition-property: border;
   transition-duration: 250ms;
@@ -742,6 +742,44 @@ body {
 .client-item-link:hover .client-item-svg,
 .client-item-link:focus .client-item-svg {
   fill: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .client-item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .client-item:nth-child(n+3) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .client-item-link {
+    width: 226px;
+  }
+  .client-item:nth-child(n+4) {
+    margin-top: 30px;
+  }
+  .client-item:not(:nth-child(3n+1)) {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client {
+    padding: 94px 0px;
+  }
+  .client-title {
+    font-size: 36px;
+    line-height: 1.167;
+    margin-bottom: 50px;
+  }
+  .client-list {
+    justify-content: space-between;
+  }
+  .client-item-link {
+    width: 170px;
+  }
 }
 
 .footer {

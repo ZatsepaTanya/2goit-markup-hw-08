@@ -1,0 +1,81 @@
+.client{
+    padding: 60px 0px;
+    &-title{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.179;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+        color: $title-text-color;
+    }
+    &-list{
+        display:flex;
+        flex-wrap: wrap;
+        }
+    &-item-link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        width: 210px;
+        height: 90px;
+        transition-property: border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+        border: 1px solid $accent-color;
+    }
+    }
+    &-item-svg{
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier (0.4, 0, 0.2, 1);
+        .client-item-link:hover &,
+        .client-item-link:focus &{
+            fill: $accent-color;
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .client{
+        &-item:nth-child(2n){
+            margin-left: 30px;
+        }
+        &-item:nth-child(n+3){
+            margin-top: 30px;
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:1199px){
+    .client{
+        &-item-link{
+            width: 226px;
+        }
+        &-item:nth-child(n+4){
+            margin-top: 30px;
+        }
+        &-item:not(:nth-child(3n+1)){
+            margin-left: 30px;
+        }
+
+    }
+}
+@media screen and (min-width: 1200px){
+    .client{
+        padding: 94px 0px;
+        &-title{
+            font-size: 36px;
+            line-height: 1.167;
+            margin-bottom: 50px;         
+            }
+        &-list{
+            justify-content: space-between;
+            }
+        &-item-link{
+            width: 170px;
+            }
+    }
+}
