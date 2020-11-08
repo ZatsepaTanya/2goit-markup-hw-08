@@ -1,0 +1,16 @@
+.conteiner{
+    width: 1200px;
+    padding: 0px 15px;
+    margin:0 auto;
+    .hero &{
+        display: flex;
+        flex-direction: column;
+    }
+    .header &{
+        display: flex;
+        align-items: center;
+    }
+    .footer &{
+        display: flex;
+     }
+}
