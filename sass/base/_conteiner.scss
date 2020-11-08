@@ -1,7 +1,6 @@
 .conteiner{
-    width: 1200px;
+    width: 100%;
     padding: 0px 15px;
-    margin:0 auto;
     .hero &{
         display: flex;
         flex-direction: column;
@@ -14,3 +13,20 @@
         display: flex;
      }
 }
+@media screen and (min-width: 480px){
+    .conteiner{
+        width: 480px;
+        margin:0 auto;
+      }
+}
+@media screen and (min-width: 768px){
+    .conteiner{
+        width: 768px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .conteiner{
+        width: 1200px;
+        }
+}
+
