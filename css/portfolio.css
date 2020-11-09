@@ -344,7 +344,6 @@ body {
 }
 
 .footer-social-icon {
-  margin: 60px 0px;
   text-align: center;
 }
 
@@ -451,5 +450,40 @@ body {
   height: 24px;
   padding-left: 10px;
   background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-social-icon {
+    margin: 60px 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-conteiner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-social-icon {
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1299px) {
+  .footer-form {
+    margin-top: 60px;
+  }
+  .footer-input {
+    width: 358px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-conteiner {
+    flex-direction: row;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
