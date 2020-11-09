@@ -14,8 +14,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: #FFFFFF;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -28,7 +28,7 @@
          line-height: 1.15;
          text-align: center;
          letter-spacing: 0.03em;
-         margin-bottom: 12px;
+         margin-bottom: 30px;
       
          color: $title-text-color;
          }
@@ -37,8 +37,8 @@
          font-family: Roboto;
          font-style: normal;
          font-weight: 400;
-         font-size: 12px;
-         line-height: 1.167;
+         font-size: 14px;
+         line-height: 1.142;
          letter-spacing: 0.01em;
          margin-bottom: 4px;
          
@@ -183,8 +183,8 @@
    font-family: Roboto;
    font-style: normal;
    font-weight: 400;
-   font-size: 14px;
-   line-height: 1.714;
+   font-size: 12px;
+   line-height: 1.167;
    
    letter-spacing: 0.03em;
    
@@ -194,8 +194,8 @@
 font-family: Roboto;
 font-style: normal;
 font-weight: 400;
-font-size: 14px;
-line-height: 1.714;
+font-size: 12px;
+line-height: 1.167;
 letter-spacing: 0.03em;
 color: $accent-color;
 
@@ -206,7 +206,7 @@ color: $accent-color;
    width: 16px;
    height: 15px;
    border: 2px solid #212121;
-   margin-right: 7px;
+   margin-right: 8px;
    vertical-align: middle;
 }
 .checkbox:checked + span::before{
@@ -216,3 +216,18 @@ color: $accent-color;
 
 }
 
+@media screen and (min-width: 1200px){
+   .modal{
+      width: 528px;
+      height: 581px;
+   }
+.policy-click{
+ 
+   font-size: 14px;
+   line-height: 1.714;
+   }
+   .form-policy{
+      font-size: 14px;
+   line-height: 1.714;
+      }
+}
