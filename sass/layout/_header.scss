@@ -153,6 +153,16 @@
         &-list-item:not(:last-child){
            margin-right: 50px;
        }
+       .current{
+        &::after{
+           bottom: -35px;
+        }
+    }
+}
+.header-address-list-item:first-child{
+    
+    margin-bottom: 10px;
+
 }
 }
 @media screen and (min-width: 1200px){
