@@ -63,10 +63,16 @@
             display: flex;
             flex-wrap: wrap;
    
-            
+           &-list-item{
+              display: flex;
+           } 
             &-info{
                width: 100%;
                padding: 20px 24px;
+            }
+            &-img{
+               width:100%;
+
             }
             &-name{
                font-weight: 700;
@@ -121,7 +127,7 @@
 }
 @media screen and ( min-width:480px){
    .portfolio{
-   &-list-item{
+   &-list-link{
       width: 450px;
    
 
@@ -164,7 +170,7 @@
         }
         &-navigation-item:not(:last-child){
          margin-right: 8px;}
-        &-list-item{
+        &-list-link{
          width: 354px;
          }
          &-list-item:nth-child(2n+1){

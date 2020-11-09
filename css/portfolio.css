@@ -357,9 +357,17 @@ body {
   flex-wrap: wrap;
 }
 
+.portfolio-list-list-item {
+  display: flex;
+}
+
 .portfolio-list-info {
   width: 100%;
   padding: 20px 24px;
+}
+
+.portfolio-list-img {
+  width: 100%;
 }
 
 .portfolio-list-name {
@@ -400,7 +408,7 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .portfolio-list-item {
+  .portfolio-list-link {
     width: 450px;
   }
 }
@@ -437,7 +445,7 @@ body {
   .portfolio-navigation-item:not(:last-child) {
     margin-right: 8px;
   }
-  .portfolio-list-item {
+  .portfolio-list-link {
     width: 354px;
   }
   .portfolio-list-item:nth-child(2n+1) {
