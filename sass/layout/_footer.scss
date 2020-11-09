@@ -7,11 +7,7 @@
         flex-direction: column;
         align-items: center;
     }
-    &-logo-addres{
-        // width: 232px;
-        text-align:center;
-     
-    }
+    
     &-logo{
         font-family: $logo-font;
         font-style: normal;
@@ -50,8 +46,7 @@
     color: rgba(255, 255, 255, 0.6);
         }
     &-social-icon{
-        // margin: 60px 0px;
-        text-align: center;
+           
             &-list{
                display: flex;
             }
@@ -89,14 +84,13 @@
                fill: #fff;
                }
          }
-    &-form{
-        width: 100%;
-        text-align: center;
-        
-    }
+    // &-form{
+    //     width: 100%;
+                
+    // }
     &-mail-form{
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
     }
    &-form-title{
          font-weight: 700;
@@ -126,8 +120,8 @@
          border-radius: 4px;
          padding: 10px 28px;
          border:0;
-         margin: 0 auto;
-         margin-top: 20px;
+        //  margin: 0 auto;
+        //  margin-top: 20px;
          }
    &-send-btn-text{
          font-family: Roboto;
@@ -171,34 +165,75 @@
         }
         &-social-icon{
             align-self: flex-start;
-            &-title{
-                margin-top: 5px;
-            }
+            margin-top: 12px;
         }
     }
    
 }
-@media screen and (min-width: 768px) and (max-width: 1299px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
     .footer{
         &-form{
             margin-top: 60px;
         }
         &-input{
-            width: 358px;
+            width: 450px;
             display: block;
             margin: 0 auto;
         }
     }
 }
+@media screen and (max-width: 1199px){
+    .footer{
+        &-logo-addres{
+            text-align:center;
+           }
+           &-form{
+            width: 100%;
+                    
+        }
+        &-mail-form{
+            // display: flex;
+            flex-direction: column;
+        }
+     &-social-icon{
+               text-align: center;
+     }
+      
+     &-form{
+           text-align: center;
+      }
+      &-send-btn{
+        
+        margin: 0 auto;
+        margin-top: 20px;
+        }
+
+}
+}
 @media screen and (min-width: 1200px){
     .footer{
         &-conteiner{
-            // width: 100%;
-            // display: flex;
-            flex-direction: row;
-            // align-items: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         }
+        &-logo{
+            font-size: 26px;
+            line-height: 1.192;
+            }
+        &-input{
+            display:block;
+            width: 450px;
+            margin-right: 12px;
+        }
+        &-social-icon{
+            margin-top: 12px;
+            margin-left: 70px;
+        } 
+        &-form{
+            align-self: flex-start;
+            margin-top: 12px;
+            margin-left: 93px;
+         }
     }
    
-
 }
